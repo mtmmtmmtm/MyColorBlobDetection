@@ -28,13 +28,14 @@ proguard/
 
 # Android Studio Navigation editor temp files
 .navigation/
-
+.externalNativeBuild
 # Android Studio captures folder
 captures/
 
 # Intellij
 *.iml
 .idea/workspace.xml
-
+.idea/libraries
+.DS_Store
 # Keystore files
 *.jks
