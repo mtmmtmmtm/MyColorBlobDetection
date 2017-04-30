@@ -200,8 +200,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
 
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
         mRgba = inputFrame.rgba();
-
         if (mIsColorSelected) {//!!!!!!!!!!!
+
             mDetector.process(mRgba);  //
             List<MatOfPoint> contours = mDetector.getContours();
             Log.e(TAG, "Contours count: " + contours.size());
@@ -214,6 +214,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnTouchList
             mSpectrum.copyTo(spectrumLabel);
             //*/
         }
+        //rotate
+
 
         return mRgba;
     }
