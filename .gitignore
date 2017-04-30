@@ -40,4 +40,4 @@ captures/
 *.jks
 
 #apk
-!*app-debug.apk
+!app-debug.apk
